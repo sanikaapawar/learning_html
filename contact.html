@@ -1,85 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+
+   
+    <title>home-index</title>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  
+  <style>
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: orange;
+     
+    }
+    
+
+    .nav-links a {
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      margin-left: 30px;
+      font-family: Arial, sans-serif;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: #000;
+    }
+     fieldset {
+      width: 60%;
+      margin: auto;
+      padding: 30px;
+      border: 2px solid #ffa726;
+      border-radius: 10px;
+      background-color: #fff8ee;
+    }
+
+    legend {
+      font-size: 20px;
+      color: #ff6f00;
+      font-weight: bold;
+    }
+
+    label {
+      display: inline-block;
+      width: 120px;
+      margin-bottom: 10px;
+      vertical-align: top;
+    }
+
+    
+
+    
+
+   
+
+    
+
+    input[type="submit"]:hover {
+      background-color: #e65c00;
+    }
+  </style>
+  </style>
 </head>
+
+
+<header>
+  <nav class="navbar">
+    <div class="logo">
+     <div font-size=90 ><h2>🛒 Online Shopping</h2></b></div>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="Categories.html">Categories</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </nav>
+</header>
 <body>
-
-    <header>
-        <nav>
-            <a href="ind.html">Home</a>
-             <a href="about.html">About Us</a>
-              <a href="product.html">Products</a>
-               <a href="contact.html">Contact Us</a>
-        </nav>
-       </header>
-    <fieldset>
-        <legend><b>CONTACT FORM</b></legend>
-        <form>
-            <label>first name</label>
-            <input type="text" placeholder="enter your first name"><br><br>
-
-            <label>last name</label>
-            <input type="text" placeholder="enter your last name"><br><br>
+   
+ <h2><center>Your next favorite outfit is waiting in our latest collection!</center> </h2>
 
 
-            <label>Address</label>
-            <textarea></textarea><br><br>
+  <fieldset>
+    <legend>CONTACT FORM</legend>
+    <form>
+      <label>First Name:</label>
+      <input type="text" placeholder="Enter your first name"><br><br>
+
+      <label>Last Name:</label>
+      <input type="text" placeholder="Enter your last name"><br><br>
+
+      <label>Address:</label>
+      <textarea rows="3" cols="30"></textarea><br><br>
+
+      <label>Mobile No:</label>
+      <input type="number" placeholder="Mobile no"><br><br>
+
+      <label>Password:</label>
+      <input type="password" placeholder="Enter password"><br><br>
+
+      <label>DOB:</label>
+      <input type="date"><br><br>
+
+      <label>City:</label>
+      <div class="checkbox-group">
+        <input type="checkbox" checked> Mumbai
+        <input type="checkbox"> Pune
+        <input type="checkbox"> Akluj
+        <input type="checkbox"> Solapur
+      </div><br><br>
+
+      <label>Gender:</label>
+      <div class="radio-group">
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Others
+      </div><br><br>
+
+      <label>Select State:</label>
+      <select>
+        <option>Select state</option>
+        <option>Maharashtra</option>
+        <option>Karnataka</option>
+        <option>Madhya Pradesh</option>
+      </select><br><br>
+
+      <label>Upload Image:</label>
+      <input type="file"><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </fieldset>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30247.304924650172!2d73.76035437431639!3d18.622977299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9c990af237b%3A0xfe1b6b2fb1002391!2sA%20S%20Cloth%20Center!5e0!3m2!1smr!2sin!4v1754226793204!5m2!1smr!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>
 
 
-            <label>Mobile no</label>
-            <input type="number" placeholder="mobile no"><br><br>
 
-
-            <label>Password</label>
-            <input type="password" placeholder="enter password"><br><br>
-
-            <label>DOB</label>
-            <input type="date">
-            <input type="month">
-            <input type="week">
-            <input type="time">
-            <input type="datetime-local"><br><br>
- <label>color</label>
-            <input type="color"><br><br>
-
-            <label>Range</label>
-            <input type="range"><br><br> 
-
-            <label>city</label>
-            <input type="checkbox" checked>mumbai
-            <input type="checkbox">pune
-              <input type="checkbox">akluj
-              <input type="checkbox">solapur<br><br>
-
-<label>gender</label>
-              <input type="radio" name="gender"> male
-          <input type="radio" name="gender"> female
-          <input type="radio" name="gender"> others  <br><br>
-               
- <label>select state</label>
- <select>
-    <option>select state</option>
-    <option>maharashtra</option>
-    <option>karnatak</option>
-    <option>madhy pradesh</option>
- </select> <br><br>
- 
-<label>upload your image</label>
-<input type="file" multiple> <br><br>
-<label>search</label>
-<input type="search"><br><br>
-<input type="tel">
-<input type="hidden">
-<input type="image"><br><br>
-<center><input type="submit"></center>
 
 
 
             
-        </form>
-    </fieldset>
-</body>
-</html>
+        
+
+
+
